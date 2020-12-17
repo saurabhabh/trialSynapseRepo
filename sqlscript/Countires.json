@@ -1,0 +1,16 @@
+{
+	"name": "Countires",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [Country_Id]\n,[Name]\n,[Tax]\n,[Code]\n,[Tax_Name]\n FROM [dbo].[\"Shopify\".\"Countries\"]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"name": "ShopifyPool",
+				"type": "SqlPool"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

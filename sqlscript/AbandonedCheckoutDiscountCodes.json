@@ -1,0 +1,16 @@
+{
+	"name": "AbandonedCheckoutDiscountCodes",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP 100 * FROM AbandonedCheckoutDiscountCodes\nGo",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"name": "ShopifyPool",
+				"type": "SqlPool"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

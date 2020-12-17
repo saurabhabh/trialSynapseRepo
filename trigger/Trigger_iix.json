@@ -1,0 +1,24 @@
+{
+	"name": "Trigger_iix",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "CopyPipeline_Shopify_New_1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 120,
+				"startTime": "2020-12-17T05:14:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
