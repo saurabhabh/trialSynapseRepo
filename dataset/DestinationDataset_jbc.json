@@ -1,0 +1,29 @@
+{
+	"name": "DestinationDataset_jbc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "firstworkspacesa-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"cw_fileName": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().cw_fileName",
+					"type": "Expression"
+				},
+				"folderPath": "Shopify",
+				"fileSystem": "filesystemdatalakestorage"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

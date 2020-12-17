@@ -1,0 +1,16 @@
+{
+	"name": "Abandoned_checkouts",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [Abandoned_Checkout_Id]\n,[Discount_Codes_Index]\n,[Abandoned_Checkout_Discount_Codes_Code]\n,[Abandoned_Checkout_Discount_Codes_Amount]\n,[Abandoned_Checkout_Discount_Codes_Type]\n FROM [dbo].[\"Shopify\".\"Abandoned_Checkout_Discount_Codes\"] Where [Abandoned_Checkout_Discount_Codes_Code] <> 'Livinguard102'",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"name": "ShopifyPool",
+				"type": "SqlPool"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
